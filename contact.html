@@ -13,7 +13,7 @@
 </head>
 <body>
     <!-- header -->
-    <header class="header-home">
+    <header class="header">
         <!-- nav -->
         <nav class="navbar main-grid">
             <div class="navbar-content">
@@ -23,43 +23,41 @@
                 <div class="nav">
                 <button  aria-label="Close navigation" class="close-nav">&times;</button>
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="index.html" class="nav-link current">home</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link">home</a></li>
                     <li class="nav-item"><a href="about.html" class="nav-link">about us</a></li>
-                    <li class="nav-item"><a href="contact.html" class="nav-link">contact</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link current">contact</a></li>
                 </ul>
                 </div>
             </div>
         </nav>
         <!-- end of nav -->
-
-        <!-- hero -->
-        <section class="hero main-grid">
-            <div class="col-2">
-                <h1 class="hero-title">The only marketing agency on <span class="accent-color">a mission from God</span>, fully dedicated to increase your web traffic. </h1>
-                <p class="hero-subtitle">We’re two brothers from Chicago that are trying to pay back our debt. We can help you with <strong>SEO, SEM content marketing</strong> and whatever else.</p>
-                <a href="contact.html" class="btn btn-primary">contact</a>
-            </div>
-        </section>        
-        <!-- end of hero -->
     </header>
     <!-- end of header -->
 
     <!-- main -->
-    <main>
-        <section class="info main-grid">
-            <div class="col">
-                <h2 class="section-title section-title-center">About Us</h2>
-                <p>We grew up in downtown Chicago, and we used to play in a band. <strong>Jake loves fried chicken</strong>, and <strong>Elwood loves dry white toast</strong>.</p>
-            </div>
-            <div class="col">
-                <h2 class="section-title section-title-center">Our skills</h2>
-                <p>Elwood is an expert in <strong>SEO, SEM, and driving from the police</strong>. Jake is our <strong>social media specialist</strong>, and he has an amazing voice.</p>
-            </div>
-            <div class="col">
-                <h2 class="section-title section-title-center">Get in touch</h2>
-                <p>Send us an email with some info about what help you need and <strong>we’ll drive over to your place</strong> in our Bluesmobile the following day to discuss the deal.</p>
-            </div>
-        </section>
+    <main class="main-content main-grid">
+        <h1 class="page-title">Contact us.</h1>
+        <p class="subtitle">Let us know how we can help you need and we’ll drive over to your place in our Bluesmobile the following day to discuss the deal.</p>
+        <img class="main-image" src="img/mail.jpg" alt="mail boxex">
+        <div class="secondary-text">
+            <h2 class="section-title">Getting in touch with us</h2>
+            <p>You can either use the form or send us an email. I'll get back in touch with you as soon as possible!</p>
+        </div>
+        <div class="main-text">
+            <form class="contact-form" action="https://formspree.io/f/xjvqgnek" method="POST">
+                <label class="fname-label" for="fname">First Name</label>
+                <input class="fname-input" id="fname" type="text" name="fname" required>
+            
+                <label class="lname-label" for="lname">Last Name</label>
+                <input class="lname-input" id="lname" type="text" name="lname" required>
+            
+                <label class="message-label" for="message">Message</label>
+                <textarea class="message-textarea" id="message" cols="30" rows="10" name="message" required></textarea>
+            
+                <button class="btn btn-primary btn-form" type="submit">send</button>
+            </form>
+            
+        </div>    
     </main>
     <!-- end of main -->
 
